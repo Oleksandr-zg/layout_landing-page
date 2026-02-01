@@ -9,7 +9,11 @@
 
   @include mixins.on-tablet {
     margin-top: 150px;
-    height: 25.44rem;
+    height: 22.44rem;
     background-image: url(../images/footer-tablet-desktop.png);
+  }
+
+  @include mixins.on-desktop {
+    height: 35.44rem;
   }
 }

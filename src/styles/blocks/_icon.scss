@@ -22,11 +22,13 @@
     &_phone-call {
       background-image: url(../images/icon-phone-call.svg);
 
-      &:hover ~ .pop-up_position {
-        visibility: visible;
-        opacity: 1;
-        pointer-events: auto;
-        transition-duration: 1.5s;
+      @include mixins.on-desktop {
+        &:hover ~ .pop-up_position {
+          visibility: visible;
+          opacity: 1;
+          pointer-events: auto;
+          transition-duration: 1.5s;
+        }
       }
     }
 

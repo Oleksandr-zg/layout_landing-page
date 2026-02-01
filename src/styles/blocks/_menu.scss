@@ -5,6 +5,11 @@
   background-color: variables.$color-209-45-53;
   box-sizing: border-box;
   overflow: auto;
+  
+  &::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+  }
 
   &_position {
     height: 100vh;
